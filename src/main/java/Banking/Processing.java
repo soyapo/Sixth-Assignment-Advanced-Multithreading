@@ -7,10 +7,10 @@ public class Processing {
     public static void main(String[] args)
     {
         List<BankAccount> accounts = new ArrayList<>();
-        accounts.add(new BankAccount()); // index 0
-        accounts.add(new BankAccount()); // index 1
-        accounts.add(new BankAccount()); // index 2
-        accounts.add(new BankAccount()); // index 3
+        accounts.add(new BankAccount());
+        accounts.add(new BankAccount());
+        accounts.add(new BankAccount());
+        accounts.add(new BankAccount());
     }
     //TODO
 }
