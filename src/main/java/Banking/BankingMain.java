@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BankingMain {
-    public static void main(String[] args) throws InterruptedException {
+
+    public List<BankAccount> calculate() throws InterruptedException {
         List<BankAccount> accounts = new ArrayList<>();
         accounts.add(new BankAccount(1,20000));
         accounts.add(new BankAccount(2,20000));
@@ -25,6 +26,12 @@ public class BankingMain {
             thread.join();
         }
 
+
+        return accounts;
+    }
+    public static void main(String[] args) throws InterruptedException {
+        BankingMain main = new BankingMain();
+        List<BankAccount> accounts = main.calculate();
         for(BankAccount account : accounts){
             System.out.println("Final balance of Account Number "  + account.getId() + " : " + account.getBalance());
         }
