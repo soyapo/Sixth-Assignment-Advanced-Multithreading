@@ -200,15 +200,9 @@ If the condition is satisfied, the point is considered **inside the circle**, an
 
 - A multi-threaded version that uses all available CPU cores.
 
-2. Write a Brief Report (README):
-
-- Explain how you parallelized the computation using Java threads or executor services.
+2. Print a Brief Report:
 
 - Include a comparison of performance (benchmark results) between the multi-threaded and single-threaded versions.
-
----
-
-Certainly! Here's a filled-in version of your instructions that is clear, professional, and emphasizes concurrency and synchronization requirements:
 
 ---
 
