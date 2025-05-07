@@ -193,19 +193,20 @@ The infrastructure for the following actions is **already written**:
 ### Monte Carlo
   
 1. **Graphical Visualization (UI)**  
-  - Use a UI framework like **JavaFX** to visualize the simulation:
-    - Show the square and inscribed circle.
-    - Plot random points in real time:
-      - **Green** dots for points inside the circle.
-      - **Red** dots for points outside the circle.
-    - Update the estimated value of π dynamically as points are plotted.
+    - Use a UI framework like **JavaFX** to visualize the simulation:
+     - Show the square and inscribed circle.
+       - Plot random points in real time:
+         - **Green** dots for points inside the circle.
+         - **Red** dots for points outside the circle.
+       - Update the estimated value of π dynamically as points are plotted.
 
 2. **Benchmark**  
-  - Create a report comparing runtime vs. number of points for both single-threaded and multi-threaded runs.
-  - Export results as a CSV or JSON file.
+   - Create a report comparing runtime vs. number of points for both single-threaded and multi-threaded runs.
+   - Export results as a CSV or JSON file.
 
 ### Banking System
-  - Live Charting: Display balance changes over time using a live chart.
+1. Live Charting:
+   - Display balance changes over time using a live chart.
   
 
 
