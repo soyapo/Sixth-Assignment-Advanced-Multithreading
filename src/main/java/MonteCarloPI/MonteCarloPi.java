@@ -1,7 +1,11 @@
+package MonteCarloPI;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-import java.util.concurrent.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class MonteCarloPi {
 
@@ -31,6 +35,7 @@ public class MonteCarloPi {
     public static double estimatePiWithoutThreads(long numPoints)
     {
         //TODO
+        return 0;
     }
 
     // Monte Carlo Pi Approximation with threads
@@ -39,5 +44,6 @@ public class MonteCarloPi {
         ExecutorService executor = Executors.newFixedThreadPool(numThreads);
         List<Callable<Long>> tasks = new ArrayList<>();
         //TODO
+        return 0;
     }
 }
