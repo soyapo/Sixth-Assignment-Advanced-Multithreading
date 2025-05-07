@@ -200,15 +200,48 @@ If the condition is satisfied, the point is considered inside the circle, and we
 
 ---
 
-### Banking System
+Certainly! Here's a filled-in version of your instructions that is clear, professional, and emphasizes concurrency and synchronization requirements:
 
-#### Task Description
-...
+---
 
-#### 🛠 What  You  Need to Do
+### 🏦 Banking System
 
-...
+#### 📝 Task Description
 
+You are building a simple multi-threaded banking system. The system manages **four bank accounts**, and processes a series of transactions (withdrawals, deposits, and transfers) by reading instructions from **four input files**. Each file contains a list of operations and is handled by a **separate thread**.
+
+Your goal is to implement safe and correct logic for the `deposit`, `withdraw`, and `transfer` methods in the `BankAccount` class.
+
+**The Setup**
+The infrastructure for the following actions is **already written**:
+
+- initializing accounts, 
+- reading input files,
+- parsing the data, and
+- creating/running threads
+
+---
+
+#### 🛠 What You Need to Do
+ 
+1. **Your Task**
+   You only need to implement the following methods inside the `BankAccount` class:
+
+    * `deposit(int amount)`
+    * `withdraw(int amount)`
+    * `transfer(BankAccount target, int amount)`
+
+2. **Concurrency Requirements**
+
+    * All methods must be **thread-safe**. Multiple threads may access and modify the same accounts concurrently.
+    * You **must prevent race conditions** using synchronization mechanisms such as `ReentrantLock`.
+    * For `transfer`, you **must acquire locks on both source and target accounts simultaneously**.
+      🔒 **Important:** Without proper locking,deadlocks may occur. Identify the problem and prevent it from happening. 
+
+3. **Note:**
+   
+   For the sake of simplicity in this assignment, you do not need to check whether the balance is sufficient before performing a withdrawal or a transfer.
+   This means accounts are allowed to have negative balances, and there is no need to throw exceptions or block operations due to insufficient funds.
 ---  
 
 
