@@ -32,7 +32,7 @@ If you don’t have Gradle installed locally, you can either:
 
 
 ## Introduction
-Welcome to your Sixth Advanced Programming (AP) Assignment. This project is divided into two main sections:
+Welcome to the Sixth Advanced Programming (AP) Assignment. This project is divided into two main sections:
 
 1. **Theoretical Questions**: This section is designed to deepen your understanding of advanced multithreading concepts in Java. You'll have to analyze one code block and answer questions about it.
 
@@ -142,7 +142,7 @@ If the condition is satisfied, the point is considered **inside the circle**, an
 
 2. Compare the result:
 
-- Use the benchmark results to get to a comparison of performance between the multi-threaded and single-threaded versions.
+- Use the benchmark results to compare the performance of the multi-threaded and single-threaded versions.
 
 3. Answer the following questions in the **Report.md** file
 
@@ -180,7 +180,7 @@ Note: Account setup, input parsing, and thread management are already implemente
     * All methods must be **thread-safe**. Multiple threads may access and modify the same accounts concurrently.
     * You **must prevent race conditions** using synchronization mechanisms such as `ReentrantLock`.
     * For `transfer`, you **must acquire locks on both source and target accounts simultaneously**.
-    * 🔒 **Important:** Without proper locking, deadlocks may occur. Identify the problem and prevent it from happening.
+    * 🔒 **Note:** Improper locking can lead to deadlocks. Identify the problem and prevent it from happening.
        
 
 3. **Note:**
