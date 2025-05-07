@@ -169,19 +169,27 @@ public class CallableFutureExample {
 The Monte Carlo algorithm for estimating π (pi) is a classic example of using
 random sampling to approximate a mathematical constant.
 
-This project simulates random points(x,y) in a 2D plane, within a square of side length
-2r, centered at the origin (0,0). Inside this square, a circle of radius r is perfectly inscribed.
+This project simulates random points $(x,y)$ in a 2D plane, within a square of side length
+$2r$, centered at the origin $(0,0)$. Inside this square, a circle of radius $r$ is perfectly inscribed.
 
 The simulation calculates the ratio of points that fall inside the circle to the total number of generated points.
-This ratio approximates the area ratio between the circle and the square, and can be used, for example, to estimate the value of π.
+This ratio approximates the area ratio between the circle and the square, and can be used to estimate the value of $\pi$.
 
-- Area of Square: $(2r)^2 = 4r^2$
-- Area of Circle: $4\pi r^2$
-- The ratio of these two: $\frac{circle's area}{square's area} = \frac{\pi r^2}{4r^2} = \frac{\pi}{4} $
+* Area of Square: $(2r)^2 = 4r^2$
+* Area of Circle: $\pi r^2$
+* The ratio of these two:
 
-We generate random (x,y) pairs within the square domain and determine whether each point lies inside the inscribed circle using the condition:
-$$x+y\leqslant 1$$
-If the condition is satisfied, the point is considered inside the circle, and we increment the corresponding counter.
+$$
+\frac{\text{circle's area}}{\text{square's area}} = \frac{\pi r^2}{4r^2} = \frac{\pi}{4}
+$$
+
+We generate random $(x,y)$ pairs within the square domain and determine whether each point lies inside the inscribed circle using the condition:
+
+$$
+x^2 + y^2 \leq r^2
+$$
+
+If the condition is satisfied, the point is considered **inside the circle**, and we increment the corresponding counter.
 
 
 #### 🛠 What  You  Need to Do
