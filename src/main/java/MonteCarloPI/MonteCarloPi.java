@@ -19,7 +19,7 @@ public class MonteCarloPi {
         System.out.println("Time taken (single threads): " + (endTime - startTime) / 1_000_000 + " ms");
 
         // With Threads
-        System.out.println("Multi threaded calculation started: ");
+        System.out.printf("Multi threaded calculation started: (your device has %d logical threads)\n",NUM_THREADS);
         startTime = System.nanoTime();
         double piWithThreads = estimatePiWithThreads(NUM_POINTS, NUM_THREADS);
         endTime = System.nanoTime();
