@@ -13,7 +13,7 @@
 
 
 ## Important Note:
-This project is configured to use a **local Gradle installation**. If you're opening this project on your own system, please make sure to:
+When you're opening this project on your own system, please make sure to:
 
 1. Go to **Settings/Preferences** > **Build, Execution, Deployment** > **Build Tools** > **Gradle**.
 
@@ -34,7 +34,7 @@ If you don’t have Gradle installed locally, you can either:
 ## Introduction
 Welcome to your Sixth Advanced Programming (AP) Assignment. This project is divided into two main sections:
 
-1. **Theoretical Questions**: This section is designed to deepen your understanding of advanced multithreading concepts in Java. You'll have to analyze one code block and answer questions about them.
+1. **Theoretical Questions**: This section is designed to deepen your understanding of advanced multithreading concepts in Java. You'll have to analyze one code block and answer questions about it.
 
 2. **Practical Questions**: In this section, you'll get hands-on experience with multithreading in Java. Your code will be manually checked to ensure you've implemented the tasks using multithreading.
 
@@ -49,7 +49,6 @@ Welcome to your Sixth Advanced Programming (AP) Assignment. This project is divi
 
 - Compare performance between single-threaded and multi-threaded solutions.
 
-...
 
 ## Theoretical Questions 📝
 **Note: Please answer these questions in a Markdown file (Report.md) and place it in the root directory of your fork. Include code or screenshots where you see fit.**
@@ -100,7 +99,7 @@ public class AtomicDemo {
 
 ## Practical Questions 💻
 
-### Pi (π) Estimation - Monte Carlo Algorithm
+### 🧮 Pi (π) Estimation - Monte Carlo Algorithm
 
 
 ![](./Images/MonteCarlo.jpg)
@@ -159,17 +158,11 @@ If the condition is satisfied, the point is considered **inside the circle**, an
 
 #### 📝 Task Description
 
-You are building a simple multi-threaded banking system. The system manages **four bank accounts**, and processes a series of transactions (withdrawals, deposits, and transfers) by reading instructions from **four input files**. Each file contains a list of operations and is handled by a **separate thread**.
+You're building a simple multithreaded banking system that manages four bank accounts and processes transactions (deposits, withdrawals, transfers) using four input files—each handled by a separate thread.
 
-Your goal is to implement safe and correct logic for the `deposit`, `withdraw`, and `transfer` methods in the `BankAccount` class.
+Your task is to implement thread-safe logic for the deposit, withdraw, and transfer methods in the BankAccount class.
 
-**The Setup**
-The infrastructure for the following actions is **already written**:
-
-- initializing accounts, 
-- reading input files,
-- parsing the data, and
-- creating/running threads
+Note: Account setup, input parsing, and thread management are already implemented.
 
 ---
 
@@ -187,12 +180,16 @@ The infrastructure for the following actions is **already written**:
     * All methods must be **thread-safe**. Multiple threads may access and modify the same accounts concurrently.
     * You **must prevent race conditions** using synchronization mechanisms such as `ReentrantLock`.
     * For `transfer`, you **must acquire locks on both source and target accounts simultaneously**.
-      🔒 **Important:** Without proper locking,deadlocks may occur. Identify the problem and prevent it from happening. 
+    * 🔒 **Important:** Without proper locking, deadlocks may occur. Identify the problem and prevent it from happening.
+       
 
 3. **Note:**
    
    For the sake of simplicity in this assignment, you do not need to check whether the balance is sufficient before performing a withdrawal or a transfer.
    This means accounts are allowed to have negative balances, and there is no need to throw exceptions or block operations due to insufficient funds.
+
+4. Tests are provided — run them multiple times to ensure consistent results. This helps verify that your implementation is free of race conditions and deadlocks.
+
 ---  
 
 
@@ -227,10 +224,14 @@ Your work on this assignment will be evaluated based on:
 
 - **Code Quality**: Your code should be well-structured, readable, and efficient. Proper use of Java conventions, including variable naming, class structure, and comments, will also be considered.
 
+- Don’t forget to answer the question in the Monte Carlo task within the report file.
+
+- Your Banking System code must pass all the provided tests.
+
 - Total: 100 points
     - 🧠 Theoretical Questions – 20 points
-    - 💻 Practical Task 1 (Monte Carlo) – 50 points
-    - 📊 Practical Task 2 (Banking System) – 30 points
+    - 🧮 Practical Task 1 (Monte Carlo) – 50 points
+    - 🏦 Practical Task 2 (Banking System) – 30 points
     - 🌟 Bonus Tasks – Up to 10 extra points
 
 ## Submission ⌛

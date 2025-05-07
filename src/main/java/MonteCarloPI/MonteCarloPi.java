@@ -30,20 +30,21 @@ public class MonteCarloPi {
         //       and include your answers in your report file.
     }
 
-    // TODO: Monte Carlo Pi Approximation without threads
+    // Monte Carlo Pi Approximation without threads
     public static double estimatePiWithoutThreads(long numPoints)
     {
         // TODO: Implement this method to calculate Pi using a single thread
         return 0;
     }
 
-    // TODO : Monte Carlo Pi Approximation with threads
+    // Monte Carlo Pi Approximation with threads
     public static double estimatePiWithThreads(long numPoints, int numThreads) throws InterruptedException, ExecutionException
     {
         // TODO: Implement this method to calculate Pi using multiple threads
+
         ExecutorService executor = Executors.newFixedThreadPool(numThreads);
 
-        // HINT: You may need to create a variable to safely keep track of points that fall inside the circle
+        // HINT: You may need to create a variable to *safely* keep track of points that fall inside the circle
         // HINT: Each thread should generate and process a subset of the total points
 
         // TODO: After submitting all tasks, shut down the executor to prevent new tasks
