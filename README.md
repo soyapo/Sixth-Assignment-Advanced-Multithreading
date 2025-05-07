@@ -7,7 +7,7 @@
 - [Theoretical Questions 📝](#theoretical-questions-)
 - [Practical Questions 💻](#practical-questions-)
 - [Bonus Tasks 🌟](#bonus-tasks-)
-- [Evaluation ⚖️](#evaluation-)
+- [Evaluation 📊](#evaluation-)
 - [Submission ⌛](#submission-)
 - [Additional Resources 📚](#additional-resources-)
 
@@ -41,10 +41,13 @@ Welcome to your Sixth Advanced Programming (AP) Assignment. This project is divi
 
 ## Objectives 🎯
 
-By completing this assignment, you will:
+- Practice more advanced concepts of multithreading and concurrency in Java.
 
-- Deepen your understanding of **multithreading** in Java and apply the concepts effectively.
-- ...
+- Understand different approaches to synchronization and thread safety.
+
+- Apply concurrency techniques in practical simulations and systems.
+
+- Compare performance between single-threaded and multi-threaded solutions.
 
 ...
 
@@ -197,16 +200,16 @@ The infrastructure for the following actions is **already written**:
       - **Red** dots for points outside the circle.
     - Update the estimated value of π dynamically as points are plotted.
 
-2. **Benchmark **  
+2. **Benchmark**  
   - Create a report comparing runtime vs. number of points for both single-threaded and multi-threaded runs.
   - Export results as a CSV or JSON file.
 
 ### Banking System
-    - ...
-        - ...
+  - Live Charting: Display balance changes over time using a live chart.
+  
 
 
-## Evaluation ⚖️
+## Evaluation 📊
 
 Your work on this assignment will be evaluated based on:
 
@@ -214,12 +217,10 @@ Your work on this assignment will be evaluated based on:
 
 - **Code Quality**: Your code should be well-structured, readable, and efficient. Proper use of Java conventions, including variable naming, class structure, and comments, will also be considered.
 
-- You **must not** use advanced multithreading tools (such as ExecutorService, CompletableFuture, or others)
-
 - Total: 100 points
-    - 🧠 Theoretical Questions – 30 points
-    - 💻 Practical Task 1 (Monte Carlo) – 35 points
-    - 📊 Practical Task 2 (Banking System) – 35 points
+    - 🧠 Theoretical Questions – 20 points
+    - 💻 Practical Task 1 (Monte Carlo) – 40 points
+    - 📊 Practical Task 2 (Banking System) – 40 points
     - 🌟 Bonus Tasks – Up to 10 extra points
 
 ## Submission ⌛
