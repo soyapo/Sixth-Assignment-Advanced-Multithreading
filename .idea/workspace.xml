@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11fdb74-b865-437e-8aba-e42f6cf2de41" name="Changes" comment="Update README">
+    <list default="true" id="a11fdb74-b865-437e-8aba-e42f6cf2de41" name="Changes" comment="feat: adjust BankingMain for testing">
       <change afterPath="$PROJECT_DIR$/src/test/java/BankingSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Banking/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Banking/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Banking/BankingMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Banking/BankingMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746622179710</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: adjust BankingMain for testing">
+      <option name="closed" value="true" />
+      <created>1746623490086</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746623490086</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +168,7 @@
     <MESSAGE value="feat: add MonteCarloPi" />
     <MESSAGE value="chore" />
     <MESSAGE value="Update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README" />
+    <MESSAGE value="feat: adjust BankingMain for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adjust BankingMain for testing" />
   </component>
 </project>
