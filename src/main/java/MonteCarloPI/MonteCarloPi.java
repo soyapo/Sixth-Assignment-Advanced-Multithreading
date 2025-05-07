@@ -25,6 +25,9 @@ public class MonteCarloPi {
         endTime = System.nanoTime();
         System.out.println("Monte Carlo Pi Approximation (Multi-threaded): " + piWithThreads);
         System.out.println("Time taken (Multi-threaded): " + (endTime - startTime) / 1_000_000 + " ms");
+
+        // TODO: After completing the implementation, reflect on the questions in the description of this task in the README file
+        //       and include your answers in your report file.
     }
 
     // TODO: Monte Carlo Pi Approximation without threads

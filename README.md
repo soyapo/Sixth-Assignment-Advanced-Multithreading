@@ -136,13 +136,22 @@ If the condition is satisfied, the point is considered **inside the circle**, an
 
 1. Complete the Code:
    Implement the Monte Carlo simulation to estimate the value of π. The implementation should include both:
+
 - A single-threaded version.
 
-- A multi-threaded version that uses all available CPU cores.
+- A multi-threaded version.
 
-2. Print a Brief Report:
+2. Compare the result:
 
-- Include a comparison of performance (benchmark results) between the multi-threaded and single-threaded versions.
+- Use the benchmark results to get to a comparison of performance between the multi-threaded and single-threaded versions.
+
+3. Answer the following questions in the **Report.md** file
+
+- Was the multi-threaded implementation always faster than the single-threaded one?
+
+    - If yes, why?
+
+    - If not, what factors are the cause and what can you do to mitigate these issues?
 
 ---
 
@@ -220,8 +229,8 @@ Your work on this assignment will be evaluated based on:
 
 - Total: 100 points
     - 🧠 Theoretical Questions – 20 points
-    - 💻 Practical Task 1 (Monte Carlo) – 40 points
-    - 📊 Practical Task 2 (Banking System) – 40 points
+    - 💻 Practical Task 1 (Monte Carlo) – 50 points
+    - 📊 Practical Task 2 (Banking System) – 30 points
     - 🌟 Bonus Tasks – Up to 10 extra points
 
 ## Submission ⌛
