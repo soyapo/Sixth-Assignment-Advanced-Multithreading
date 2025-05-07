@@ -39,13 +39,13 @@ public class MonteCarloPi {
     {
         // TODO: Implement this method to calculate Pi using multiple threads
         ExecutorService executor = Executors.newFixedThreadPool(numThreads);
-        // HINT: You may need to create some local variables
 
-        // TODO: Divide the work into tasks for each thread
+        // HINT: You may need to create a variable to safely keep track of points that fall inside the circle
+        // HINT: Each thread should generate and process a subset of the total points
 
-        //TODO: do not remember to shutdown executor
-        //TODO: wait for executor to be fully terminated
-        //TODO: complete the calculation and return the result
+        // TODO: After submitting all tasks, shut down the executor to prevent new tasks
+        // TODO: wait for the executor to be fully terminated
+        // TODO: Calculate and return the final estimation of Pi
         return 0;
     }
 }
