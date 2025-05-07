@@ -4,16 +4,20 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class BankAccount {
+    private final int id;
     private int balance;
     private final Lock lock = new ReentrantLock();
 
-    public BankAccount() {
-        this.balance = 10000;
+    public BankAccount(int id, int initialBalance) {
+        this.id = id;
+        this.balance = initialBalance;
     }
 
-
+    public int getId(){
+        return  id;
+    }
     public int getBalance() {
-        // TODO
+        // TODO: Consider locking (if needed)
         return balance;
     }
 
@@ -22,22 +26,16 @@ public class BankAccount {
     }
 
     public void deposit(int amount) {
-        // TODO
-        balance += amount;
+        // TODO: Safely add to balance.
     }
 
     public void withdraw(int amount) {
-        // TODO
-        if (balance >= amount) {
-            balance -= amount;
-        }
+        // TODO: Safely withdraw from balance.
     }
 
     public void transfer(BankAccount target, int amount) {
-        // TODO
-        if (this.balance >= amount) {
-            this.withdraw(amount);
-            target.deposit(amount);
-        }
+        // TODO: Safely make the changes
+        // HINT: Both accounts need to be locked, while the changes are being made
+        // HINT: Be cautious of potential deadlocks.
     }
 }
