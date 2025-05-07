@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a11fdb74-b865-437e-8aba-e42f6cf2de41" name="Changes" comment="feat: adjust BankingMain for testing">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BankingSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Banking/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Banking/BankAccount.java" afterDir="false" />
+    <list default="true" id="a11fdb74-b865-437e-8aba-e42f6cf2de41" name="Changes" comment="chore: add gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,7 @@
     "Gradle.Sixth-Assignment-Advanced-Multithreading [:BankingMain.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -159,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746623490086</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: add BankingSystemTest for testing">
+      <option name="closed" value="true" />
+      <created>1746623537064</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746623537064</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore: add gitignore">
+      <option name="closed" value="true" />
+      <created>1746624162297</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746624162297</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,6 +185,8 @@
     <MESSAGE value="chore" />
     <MESSAGE value="Update README" />
     <MESSAGE value="feat: adjust BankingMain for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adjust BankingMain for testing" />
+    <MESSAGE value="feat: add BankingSystemTest for testing" />
+    <MESSAGE value="chore: add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add gitignore" />
   </component>
 </project>
