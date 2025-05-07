@@ -1,23 +1,26 @@
 package Banking;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.util.List;
+import java.util.Objects;
 
 public class TransactionProcessor implements Runnable {
     private final BankAccount account;
-    private final String filePath;
+    private final String fileName;
     private final List<BankAccount> allAccounts;
 
-    public TransactionProcessor(BankAccount account, String filePath, List<BankAccount> allAccounts) {
+    public TransactionProcessor(BankAccount account, String fileName, List<BankAccount> allAccounts) {
         this.account = account;
-        this.filePath = filePath;
+        this.fileName = fileName;
         this.allAccounts = allAccounts;
     }
 
     @Override
     public void run() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+        InputStreamReader is = new InputStreamReader(
+                Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream(fileName)));
+        try (BufferedReader reader = new BufferedReader(is)) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.trim().split("\\s+");
@@ -43,9 +46,6 @@ public class TransactionProcessor implements Runnable {
                         break;
                 }
             }
-
-            System.out.println("Final balance of Account Number " + (allAccounts.indexOf(account)+1) + " : " + account.getBalance());
-
         } catch (Exception e) {
             e.printStackTrace();
         }
