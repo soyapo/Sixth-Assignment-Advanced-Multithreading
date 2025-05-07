@@ -34,7 +34,7 @@ If you don’t have Gradle installed locally, you can either:
 ## Introduction
 Welcome to your Sixth Advanced Programming (AP) Assignment. This project is divided into two main sections:
 
-1. **Theoretical Questions**: This section is designed to deepen your understanding of advanced multithreading concepts in Java. You'll have to analyze two code blocks and answer questions about them.
+1. **Theoretical Questions**: This section is designed to deepen your understanding of advanced multithreading concepts in Java. You'll have to analyze one code block and answer questions about them.
 
 2. **Practical Questions**: In this section, you'll get hands-on experience with multithreading in Java. Your code will be manually checked to ensure you've implemented the tasks using multithreading.
 
@@ -93,69 +93,6 @@ public class AtomicDemo {
 - Besides AtomicInteger, what other data types are available in the java.util.concurrent.atomic package?
 
 ---  
-
-### 2. `Callable` and `Future`
-
-```java  
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.*;
-
-public class CallableFutureExample {
-  private static long factorial(int n) {
-    long result = 1;
-    for (int i = 2; i <= n; i++) result *= i;
-    return result;
-  }
-
-  static class FactorialTask implements Callable<Long> {
-    private final int number;
-
-    public FactorialTask(int number) {
-      this.number = number;
-    }
-
-    @Override
-    public Long call() throws Exception {
-      return factorial(number);
-    }
-  }
-
-  public static void main(String[] args) {
-    ExecutorService executor = Executors.newFixedThreadPool(3);
-    List<Future<Long>> futures = new ArrayList<>();
-
-    for (int i = 1; i <= 20; i++) {
-      futures.add(executor.submit(new FactorialTask(i)));
-    }
-
-    for (Future<Long> future : futures) {
-      try {
-        long result = future.get();
-        System.out.println(result);
-      } catch (InterruptedException | ExecutionException e) {
-        //[Handling Exceptions]
-      }
-    }
-
-    executor.shutdown();
-  }
-}
-```  
-
-**Questions:**
-
-- What output do you get from the program? Why?
-
-- What is the purpose of Callable in Java, and how is it different from Runnable?
-
-- What does Future.get() do, and what happens if the result is not yet available?
-
-- Why do we use executor.submit() instead of execute() in this code?
-
-- What are some real-world use cases where using Callable and Future is beneficial?
-  
----
 
 
 ## Practical Questions 💻
@@ -250,13 +187,21 @@ The infrastructure for the following actions is **already written**:
 
 ## Bonus Tasks 🌟
 
-- Monte Carlo
-    - ...
-        - ...
-    - ...
-        - ...
-        - ...
-- Banking System
+### Monte Carlo
+  
+1. **Graphical Visualization (UI)**  
+  - Use a UI framework like **JavaFX** to visualize the simulation:
+    - Show the square and inscribed circle.
+    - Plot random points in real time:
+      - **Green** dots for points inside the circle.
+      - **Red** dots for points outside the circle.
+    - Update the estimated value of π dynamically as points are plotted.
+
+2. **Benchmark **  
+  - Create a report comparing runtime vs. number of points for both single-threaded and multi-threaded runs.
+  - Export results as a CSV or JSON file.
+
+### Banking System
     - ...
         - ...
 
